@@ -150,6 +150,39 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .closing .qr img{ width:100%; display:block }
 .closing .qr span{ display:block; font-size:6.5pt; font-weight:800; color:var(--navy-900); text-transform:uppercase; letter-spacing:.4px; margin-top:.5mm }
 .credit{ font-size:6.5pt; color:var(--muted-2); margin-top:2.6mm; line-height:1.4 }
+
+/* ═════ 6 · CONTACT (v2) ═════ */
+.c-hero{ position:absolute; left:0; right:0; top:0; height:80mm; background:url(assets/photos/building.jpg) center 40%/cover }
+.c-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(6,21,39,.86) 0%,rgba(6,21,39,.55) 34%,rgba(6,21,39,.08) 62%,rgba(6,21,39,.45) 100%) }
+.c-title{ position:absolute; left:10mm; right:10mm; top:11mm; z-index:2; color:#fff }
+.c-title .k{ font-size:6.8pt; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:var(--cyan-lt); margin-bottom:1.4mm; display:flex; align-items:center; gap:2mm }
+.c-title .k i{ width:2.6mm; height:2.6mm; position:relative; display:inline-block }
+.c-title h1{ font-size:21pt; font-weight:800; line-height:1.02; letter-spacing:-.4px }
+.c-title h1 em{ font-style:normal; color:var(--gold) }
+.c-body{ position:absolute; left:10mm; right:10mm; top:70mm; bottom:12mm; z-index:3; display:flex; flex-direction:column }
+.where{ background:#fff; border-radius:3.6mm; box-shadow:0 1.6mm 5mm rgba(11,35,66,.16); padding:3.6mm 4mm; display:flex; gap:3.4mm; align-items:center }
+.where .pin{ width:10mm; height:10mm; border-radius:50%; background:var(--navy-900); flex:none; display:flex; align-items:center; justify-content:center }
+.where .pin svg{ width:5mm; height:5mm }
+.where b{ display:block; font-size:9.6pt; font-weight:800; color:var(--navy-900) }
+.where span{ display:block; font-size:7.8pt; color:var(--muted); margin-top:.4mm; line-height:1.35 }
+.where .metro{ display:inline-flex; align-items:center; justify-content:center; width:3.8mm; height:3.8mm; border-radius:.9mm; background:var(--cyan); color:#fff; font-size:6.5pt; font-weight:900; margin-right:1mm; vertical-align:-.6mm }
+.tiles{ display:grid; grid-template-columns:1fr 1fr; gap:2mm; margin:3.6mm 0 }
+.tile{ background:var(--surface); border-radius:2.6mm; padding:2.1mm 3mm; display:flex; gap:2.4mm; align-items:center }
+.tile .ic{ width:7.5mm; height:7.5mm; border-radius:50%; background:#fff; flex:none; display:flex; align-items:center; justify-content:center }
+.tile .ic svg{ width:4mm; height:4mm }
+.tile b{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--blue) }
+.tile span{ display:block; font-size:8pt; color:var(--navy-900); font-weight:600; line-height:1.3; margin-top:.2mm }
+.scan{ margin-top:auto; flex:none; background:linear-gradient(120deg,var(--navy-900),var(--navy-700)); border-radius:3.6mm; padding:3.8mm 4mm; color:#fff; position:relative; overflow:hidden }
+.scan .hd{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:3mm; position:relative; z-index:1 }
+.scan h2{ font-size:12.5pt; font-weight:800; line-height:1.05 }
+.scan h2 em{ font-style:normal; color:var(--cyan) }
+.scan .hd span{ font-size:6.8pt; color:#BFD3E8; text-align:right; line-height:1.3 }
+.scan .qrs{ display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; position:relative; z-index:1 }
+.scan .qr{ background:#fff; border-radius:2mm; padding:2mm; display:flex; flex-direction:column; align-items:center }
+.scan .qr img{ width:17mm; height:17mm; display:block }
+.scan .qr span{ font-size:6.8pt; font-weight:800; color:var(--navy-900); text-transform:uppercase; letter-spacing:.5px; margin-top:1.4mm }
+.scan .qr small{ font-size:6.5pt; color:var(--muted); margin-top:.2mm }
+.credit2{ font-size:6.5pt; color:var(--muted-2); margin-top:2.4mm; line-height:1.4 }
 </style>
 </head>
 <body>
@@ -338,48 +371,35 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 
 <!-- ═════════════════ 6 · CONTACT -->
 <section class="page">
-  <div class="dotgrid" style="right:0;top:0;width:50mm;height:34mm;-webkit-mask-image:linear-gradient(225deg,#000,transparent 70%)"></div>
-  <div class="frame">
-    <div class="sh"><div class="kick"><i class="orb"></i>Contact</div>
-      <h1>Venez nous <em>rencontrer</em></h1></div>
-    <div class="map">
-      <svg viewBox="0 0 128 92" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <rect width="128" height="92" fill="#F4F8FC"/>
-        <g stroke="#E1EAF3" stroke-width="5.5" fill="none" stroke-linecap="round">
-          <path d="M-5 30 C35 26 80 18 140 6"/><path d="M20 -5 L46 100"/><path d="M96 -5 C90 30 100 62 92 100"/></g>
-        <g stroke="#EBF1F7" stroke-width="2.4" fill="none">
-          <path d="M0 62 L128 50"/><path d="M60 0 L70 92"/><path d="M118 0 L124 92"/><path d="M0 82 C40 78 80 86 128 76"/></g>
-        <path d="M-5 38 C35 34 80 26 140 14" stroke="#29B8E8" stroke-width="1.1" stroke-dasharray="3 2" fill="none"/>
-        <g font-family="Avenir Next, Helvetica, sans-serif">
-          <g transform="translate(10 12)"><circle r="3.4" fill="#8597AB"/><circle r="1.2" fill="#fff"/>
-            <text x="5.4" y="-.6" font-size="3.4" fill="#2A3B4E" font-weight="700">Campus universitaire</text><text x="5.4" y="3.6" font-size="3.4" fill="#5A6D82">La Manouba</text></g>
-          <g transform="translate(103 21)"><rect x="-3.4" y="-3.4" width="6.8" height="6.8" rx="1.6" fill="#29B8E8"/><text x="0" y="1.3" font-size="3.6" fill="#fff" font-weight="900" text-anchor="middle">M</text>
-            <text x="0" y="8" font-size="3.4" fill="#2A3B4E" font-weight="700" text-anchor="middle">Station Métro</text><text x="0" y="12" font-size="3.4" fill="#5A6D82" text-anchor="middle">Technopole</text></g>
-          <g transform="translate(46 60)"><circle r="11" fill="#29B8E8" opacity=".14"/><circle r="6.5" fill="#29B8E8" opacity=".22"/>
-            <path d="M0 -9 c-3.6 0 -6 2.7 -6 5.8 c0 4.3 6 9.4 6 9.4 s6 -5.1 6 -9.4 c0 -3.1 -2.4 -5.8 -6 -5.8z" fill="#0B2342"/><circle cy="-3.2" r="2.1" fill="#FFC42E"/>
-            <text x="9" y="-3" font-size="4.6" fill="#0B2342" font-weight="900">ESEN</text><text x="9" y="1.8" font-size="3.3" fill="#5A6D82">Technopole de la Manouba</text></g>
-        </g>
-      </svg>
+  <div class="c-hero"></div>
+  <div class="orb" style="width:12mm;height:12mm;right:9mm;top:12mm;z-index:2;opacity:.9"></div>
+  <div class="c-title"><div class="k"><i class="orb"></i>Contact</div><h1>Venez nous<br><em>rencontrer</em></h1></div>
+  <div class="c-body">
+    <div class="where">
+      <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="#FFC42E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>
+      <div><b>Technopole de la Manouba, 2010</b>
+        <span><i class="metro" style="font-style:normal">M</i>À quelques pas de la station de métro Technopole</span></div>
     </div>
-    <div class="contact">
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span><div><b>Adresse</b><span>Technopole de la Manouba, 2010 Manouba</span></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Téléphone</b><span>+216 70 526 343<br>+216 70 526 349</span></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>E-mail</b><span>contact@esen.tn</span></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7"/></svg></span><div><b>Fax</b><span>+216 70 526 385</span></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span><div><b>Site web</b><span>www.esen.tn</span></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="12" r="2.4"/><circle cx="6" cy="18" r="2.4"/><path d="M8.2 7.1 15.8 11M8.2 16.9 15.8 13"/></svg></span><div><b>Réseaux</b><span>facebook.com/esenien<br>linkedin.com/school/esenien</span></div></div>
+    <div class="tiles">
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Téléphone</b><span>+216 70 526 343<br>+216 70 526 349</span></div></div>
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>E-mail</b><span>contact@esen.tn</span></div></div>
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span><div><b>Site web</b><span>www.esen.tn</span></div></div>
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7"/></svg></span><div><b>Fax</b><span>+216 70 526 385</span></div></div>
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></span><div><b>Facebook</b><span>/esenien</span></div></div>
+      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span><div><b>LinkedIn</b><span>/school/esenien</span></div></div>
     </div>
-    <div class="closing">
-      <div class="orb" style="width:22mm;height:22mm;left:-8mm;bottom:-10mm;opacity:.4"></div>
-      <h2 style="position:relative;z-index:1">We invest in<br><em>intelligence.</em></h2>
+    <div class="scan">
+      <div class="orb" style="width:24mm;height:24mm;right:-9mm;top:-11mm;opacity:.35"></div>
+      <div class="hd"><h2>We invest in<br><em>intelligence.</em></h2><span>Scannez avec<br>votre téléphone</span></div>
       <div class="qrs">
-        <div class="qr"><img src="assets/qr_site.svg"><span>Site web</span></div>
-        <div class="qr"><img src="assets/qr_linkedin.svg"><span>LinkedIn</span></div>
+        <div class="qr"><img src="assets/qr_site.svg"><span>Site web</span><small>esen.tn</small></div>
+        <div class="qr"><img src="assets/qr_maps.svg"><span>Itinéraire</span><small>Google Maps</small></div>
+        <div class="qr"><img src="assets/qr_linkedin.svg"><span>LinkedIn</span><small>ESEN</small></div>
       </div>
     </div>
-    <div class="credit">Document conçu par Mahmoud Ghandour et Ahmed Maknessi, mis à jour par Eya Laffet et Ayoub Ouhibi, puis repensé par Bilel Triki.</div>
+    <div class="credit2">Document conçu par Mahmoud Ghandour et Ahmed Maknessi, mis à jour par Eya Laffet et Ayoub Ouhibi, puis repensé par Bilel Triki.</div>
   </div>
-  <div class="foot"><span>ESEN · Contact</span><span class="pn">06<i> / 06</i></span></div>
+  <div class="foot" style="z-index:4"><span>ESEN · Contact</span><span class="pn">06<i> / 06</i></span></div>
 </section>
 
 </body>
