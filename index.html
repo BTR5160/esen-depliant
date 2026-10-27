@@ -152,14 +152,14 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .credit{ font-size:6.5pt; color:var(--muted-2); margin-top:2.6mm; line-height:1.4 }
 
 /* ═════ 6 · CONTACT (v2) ═════ */
-.c-hero{ position:absolute; left:0; right:0; top:0; height:80mm; background:url(assets/photos/building.jpg) center 40%/cover }
-.c-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(6,21,39,.86) 0%,rgba(6,21,39,.55) 34%,rgba(6,21,39,.08) 62%,rgba(6,21,39,.45) 100%) }
-.c-title{ position:absolute; left:10mm; right:10mm; top:11mm; z-index:2; color:#fff }
-.c-title .k{ font-size:6.8pt; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:var(--cyan-lt); margin-bottom:1.4mm; display:flex; align-items:center; gap:2mm }
+.c-hero{ position:absolute; left:0; right:0; top:0; height:63mm; background:url(assets/photos/net_band.jpg) center top/100% auto no-repeat }
+.c-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.85) 80%,#fff 100%) }
+.c-title{ position:absolute; left:10mm; right:10mm; top:44mm; z-index:2; color:var(--navy-900) }
+.c-title .k{ font-size:6.8pt; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:var(--blue); margin-bottom:1.4mm; display:flex; align-items:center; gap:2mm }
 .c-title .k i{ width:2.6mm; height:2.6mm; position:relative; display:inline-block }
 .c-title h1{ font-size:21pt; font-weight:800; line-height:1.02; letter-spacing:-.4px }
-.c-title h1 em{ font-style:normal; color:var(--gold) }
-.c-body{ position:absolute; left:10mm; right:10mm; top:70mm; bottom:12mm; z-index:3; display:flex; flex-direction:column }
+.c-title h1 em{ font-style:normal; color:var(--blue) }
+.c-body{ position:absolute; left:10mm; right:10mm; top:68mm; bottom:12mm; z-index:3; display:flex; flex-direction:column }
 .where{ background:#fff; border-radius:3.6mm; box-shadow:0 1.6mm 5mm rgba(11,35,66,.16); padding:3.6mm 4mm; display:flex; gap:3.4mm; align-items:center }
 .where .pin{ width:10mm; height:10mm; border-radius:50%; background:var(--navy-900); flex:none; display:flex; align-items:center; justify-content:center }
 .where .pin svg{ width:5mm; height:5mm }
@@ -372,8 +372,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 <!-- ═════════════════ 6 · CONTACT -->
 <section class="page">
   <div class="c-hero"></div>
-  <div class="orb" style="width:12mm;height:12mm;right:9mm;top:12mm;z-index:2;opacity:.9"></div>
-  <div class="c-title"><div class="k"><i class="orb"></i>Contact</div><h1>Venez nous<br><em>rencontrer</em></h1></div>
+    <div class="c-title"><div class="k"><i class="orb"></i>Contact</div><h1>Venez nous<br><em>rencontrer</em></h1></div>
   <div class="c-body">
     <div class="where">
       <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="#FFC42E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>
