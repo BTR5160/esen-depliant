@@ -183,6 +183,43 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .scan .qr span{ font-size:6.8pt; font-weight:800; color:var(--navy-900); text-transform:uppercase; letter-spacing:.5px; margin-top:1.4mm }
 .scan .qr small{ font-size:6.5pt; color:var(--muted); margin-top:.2mm }
 .credit2{ font-size:6.5pt; color:var(--muted-2); margin-top:2.4mm; line-height:1.4 }
+
+/* ═════ 6 · DOS (v3) ═════ */
+.back .hd6{ margin-bottom:4mm }
+.back .hd6 .kick{ display:flex; align-items:center; gap:2mm; font-size:6.8pt; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:var(--blue); margin-bottom:1.6mm }
+.back .hd6 .kick i{ width:2.6mm; height:2.6mm; position:relative; display:inline-block }
+.back .hd6 h1{ font-size:27pt; font-weight:800; line-height:.98; letter-spacing:-.7px; color:var(--navy-900) }
+.back .hd6 h1 em{ font-style:normal; color:var(--blue) }
+.back .hd6 p{ font-size:8.6pt; line-height:1.45; color:var(--ink-2); margin-top:2.6mm; max-width:100mm }
+.chan{ display:grid; grid-template-columns:1fr 1fr; grid-auto-rows:1fr; gap:3mm; flex:1; max-height:96mm }
+.ch{ border-radius:3.4mm; padding:3.2mm; background:#fff; border:.3mm solid var(--line); display:grid; grid-template-columns:1fr 22mm; gap:2.4mm; align-items:stretch; position:relative; overflow:hidden }
+.ch > div{ display:flex; flex-direction:column }
+.ch > div .ic{ margin-bottom:auto }
+.ch > img{ align-self:end }
+.ch::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:1.2mm; background:var(--c) }
+.ch .ic{ width:8mm; height:8mm; border-radius:2.2mm; background:var(--c); display:flex; align-items:center; justify-content:center; margin-bottom:2.2mm }
+.ch .ic svg{ width:4.6mm; height:4.6mm }
+.ch b{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted) }
+.ch strong{ display:block; font-size:8.6pt; font-weight:800; color:var(--navy-900); line-height:1.22; margin-top:.6mm }
+.ch img{ width:22mm; height:22mm; display:block }
+.reach{ display:grid; grid-template-columns:1.25fr 1fr; gap:3mm; margin:3mm 0 5mm }
+.rc{ background:var(--navy-900); color:#fff; border-radius:3.4mm; padding:3.2mm 3.6mm; display:flex; gap:2.6mm; align-items:center }
+.rc.l{ background:var(--surface); color:var(--navy-900) }
+.rc .ic{ width:8mm; height:8mm; border-radius:50%; background:rgba(255,255,255,.12); flex:none; display:flex; align-items:center; justify-content:center }
+.rc.l .ic{ background:#fff }
+.rc .ic svg{ width:4.2mm; height:4.2mm }
+.rc b{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--cyan-lt) }
+.rc.l b{ color:var(--blue) }
+.rc span{ display:block; font-size:8.6pt; font-weight:700; line-height:1.3; margin-top:.3mm }
+.rc small{ display:block; font-size:6.8pt; opacity:.75; margin-top:.3mm }
+.sign{ margin-top:auto; text-align:center; padding-top:4mm; border-top:.3mm solid var(--line) }
+.sign .logos2{ display:flex; justify-content:center; align-items:center; gap:4mm }
+.sign .logos2 img.l{ height:14mm }
+.sign .logos2 .sep{ width:.3mm; height:10mm; background:var(--line-2) }
+.sign .logos2 img.t{ height:8mm }
+.sign .sl{ font-size:9pt; font-weight:800; color:var(--navy-900); margin-top:2.6mm; letter-spacing:.2px }
+.sign .sl em{ font-style:normal; color:var(--blue) }
+.sign .cr{ font-size:6.5pt; color:var(--muted-2); margin-top:1.6mm; line-height:1.4 }
 </style>
 </head>
 <body>
@@ -370,35 +407,36 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 </section>
 
 <!-- ═════════════════ 6 · CONTACT -->
-<section class="page">
-  <div class="c-hero"></div>
-    <div class="c-title"><div class="k"><i class="orb"></i>Contact</div><h1>Venez nous<br><em>rencontrer</em></h1></div>
-  <div class="c-body">
-    <div class="where">
-      <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="#FFC42E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>
-      <div><b>Technopole de la Manouba, 2010</b>
-        <span><i class="metro" style="font-style:normal">M</i>À quelques pas de la station de métro Technopole</span></div>
+<section class="page back">
+  <div class="dotgrid" style="right:0;top:0;width:60mm;height:46mm;-webkit-mask-image:linear-gradient(225deg,#000,transparent 70%)"></div>
+  <div class="orb" style="width:22mm;height:22mm;right:-6mm;top:-6mm"></div>
+  <div class="orb" style="width:9mm;height:9mm;right:18mm;top:15mm;opacity:.9"></div>
+  <div class="orb" style="width:4.5mm;height:4.5mm;right:12mm;top:27mm;opacity:.75"></div>
+  <div class="orb" style="width:2.6mm;height:2.6mm;right:31mm;top:10mm;opacity:.6"></div>
+  <div class="frame">
+    <div class="hd6"><div class="kick"><i class="orb"></i>Contact</div>
+      <h1>Restons<br><em>connectés.</em></h1>
+      <p>Une question sur nos formations, un projet de partenariat ? Choisissez votre canal et scannez.</p></div>
+
+    <div class="chan">
+      <div class="ch" style="--c:var(--blue)"><div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span><b>Site web</b><strong>www.esen.tn</strong></div><img src="assets/qr_site.svg" alt=""></div>
+      <div class="ch" style="--c:#1877F2"><div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></span><b>Facebook</b><strong>ESEN · École Supérieure de l'Économie Numérique</strong></div><img src="assets/qr_facebook.svg" alt=""></div>
+      <div class="ch" style="--c:#0A66C2"><div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span><b>LinkedIn</b><strong>École Supérieure de l'Économie Numérique (ESEN)</strong></div><img src="assets/qr_linkedin.svg" alt=""></div>
+      <div class="ch" style="--c:var(--gold-deep)"><div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span><b>Itinéraire</b><strong>Technopole de la Manouba, 2010</strong></div><img src="assets/qr_maps.svg" alt=""></div>
     </div>
-    <div class="tiles">
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Téléphone</b><span>+216 70 526 343<br>+216 70 526 349</span></div></div>
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>E-mail</b><span>contact@esen.tn</span></div></div>
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span><div><b>Site web</b><span>www.esen.tn</span></div></div>
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7"/></svg></span><div><b>Fax</b><span>+216 70 526 385</span></div></div>
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></span><div><b>Facebook</b><span>/esenien</span></div></div>
-      <div class="tile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span><div><b>LinkedIn</b><span>/school/esenien</span></div></div>
+
+    <div class="reach">
+      <div class="rc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#7FD6F3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Téléphone</b><span>+216 70 526 343 · 70 526 349</span><small>Fax +216 70 526 385</small></div></div>
+      <div class="rc l"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#168FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>E-mail</b><span>contact@esen.tn</span><small>Métro : station Technopole</small></div></div>
     </div>
-    <div class="scan">
-      <div class="orb" style="width:24mm;height:24mm;right:-9mm;top:-11mm;opacity:.35"></div>
-      <div class="hd"><h2>We invest in<br><em>intelligence.</em></h2><span>Scannez avec<br>votre téléphone</span></div>
-      <div class="qrs">
-        <div class="qr"><img src="assets/qr_site.svg"><span>Site web</span><small>esen.tn</small></div>
-        <div class="qr"><img src="assets/qr_maps.svg"><span>Itinéraire</span><small>Google Maps</small></div>
-        <div class="qr"><img src="assets/qr_linkedin.svg"><span>LinkedIn</span><small>ESEN</small></div>
-      </div>
+
+    <div class="sign">
+      <div class="logos2"><img class="l" src="assets/esen_brand_logo.png" alt="ESEN"><span class="sep"></span>
+        <img class="t" src="assets/logo_manouba.svg" alt=""><img class="t" src="assets/logo_min_ensup.png" alt=""><img class="t" src="assets/logo_min_techcom.png" alt=""></div>
+      <div class="sl">We invest in <em>intelligence.</em></div>
+      <div class="cr">Document conçu par Bilel Triki</div>
     </div>
-    <div class="credit2">Document conçu par Mahmoud Ghandour et Ahmed Maknessi, mis à jour par Eya Laffet et Ayoub Ouhibi, puis repensé par Bilel Triki.</div>
   </div>
-  <div class="foot" style="z-index:4"><span>ESEN · Contact</span><span class="pn">06<i> / 06</i></span></div>
 </section>
 
 </body>
