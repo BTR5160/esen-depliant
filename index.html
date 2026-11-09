@@ -233,15 +233,18 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 /* 4 · MASTÈRES */
 .mas{ display:flex; flex-direction:column; gap:1.4mm; flex:1 }
 .ms{ flex:1 1 auto; border:.3mm solid var(--line); border-radius:3mm; overflow:hidden; display:flex; flex-direction:column }
-.ms .hd{ background:linear-gradient(100deg,var(--navy-900),var(--navy-700)); color:#fff; padding:1.2mm 3mm; font-size:7.3pt; font-weight:800; line-height:1.25; display:flex; justify-content:space-between; gap:2mm; align-items:center }
+.ms .hd{ background:linear-gradient(100deg,var(--navy-900),var(--navy-700)); color:#fff; padding:1mm 3mm; font-size:7pt; font-weight:800; line-height:1.25; display:flex; justify-content:space-between; gap:2mm; align-items:center }
 .ms .hd small{ font-weight:700; color:var(--cyan-lt); font-size:6.6pt; text-align:right }
 .ms .hd .dd{ background:var(--gold); color:var(--navy-950); font-size:6.5pt; font-weight:900; padding:.3mm 1.4mm; border-radius:1mm; white-space:nowrap }
-.ms .bd{ flex:1; padding:1.2mm 3mm 1.2mm; display:flex; flex-direction:column; justify-content:center; gap:1mm }
-.ms ul{ list-style:none; font-size:6.9pt; line-height:1.3; color:var(--ink-2) }
+.ms .bd{ flex:1; padding:1.2mm 3mm 1.2mm; display:grid; grid-template-columns:1fr 43mm; gap:3mm; align-items:start }
+.ms ul{ list-style:none; font-size:6.7pt; line-height:1.25; color:var(--ink-2) }
 .ms li{ padding-left:2.4mm; position:relative; margin-bottom:0 }
 .ms li::before{ content:""; position:absolute; left:0; top:1.05mm; width:1.2mm; height:1.2mm; border-radius:50%; background:var(--cyan) }
-.ms .m{ font-size:6.9pt; line-height:1.3; color:var(--ink-2); border-top:.25mm dashed var(--line-2); padding-top:1mm }
-.ms .m b{ font-size:6.5pt; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--gold-deep); margin-right:1.2mm }
+.ms .ob li{ text-align:justify; hyphens:manual }
+.ms .ob li + li{ margin-top:.3mm }
+.ms .bd > div > b{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1.1px; text-transform:uppercase; color:var(--blue); margin-bottom:.6mm }
+.ms .m{ border-left:.3mm dashed var(--line-2); padding-left:2.6mm }
+.ms .m > b{ color:var(--gold-deep) !important }
 .ms .m li::before{ background:var(--gold-deep) }
 
 
@@ -372,51 +375,51 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
       <div class="ms">
         <div class="hd"><span>Mastère professionnel en Data Science and Software Development</span></div>
         <div class="bd">
-          <div><ul>
+          <div class="ob"><ul>
             <li>Former des spécialistes capables d'utiliser des outils statistiques et informatiques pour accompagner et faciliter la prise de décisions à travers l'analyse de données.</li>
-            <li>Former des spécialistes capables de configurer, gérer et faire évoluer les bases de données.</li>
-            <li>Former des spécialistes capables d'assurer le développement, l'amélioration et la mise en œuvre des applications informatiques.</li></ul></div>
-          <div class="m"><b>Métiers</b>Administrateur de bases de données · Développeur d'applications web et mobiles · Data scientist, analyste de données, analyste business intelligence</div>
+            <li>Former des spécialistes capables de configurer, gérer et faire é&shy;vo&shy;luer les bases de données.</li>
+            <li>Former des spécialistes capables d'assurer le développement, l'amé&shy;lio&shy;ra&shy;tion et la mise en œuvre des applications informatiques.</li></ul></div>
+          <div class="m"><b>Métiers</b><ul><li>Administrateur de bases de données</li><li>Développeur d'applications web et mobiles</li><li>Data scientist, analyste de données, analyste business intelligence</li></ul></div>
         </div>
       </div>
       <div class="ms">
         <div class="hd"><span>Mastère professionnel en E-Business</span><small>Présentiel et à distance avec le CNFCPP</small></div>
         <div class="bd">
-          <div><ul>
+          <div class="ob"><ul>
             <li>Comprendre les enjeux liés au e-business.</li>
             <li>Acquérir un savoir-faire dans le développement informatique d'un projet de e-commerce.</li>
-            <li>Connaître les technologies des systèmes d'information pour innover dans le développement des systèmes de commerce électronique et dans les pratiques de commercialisation.</li>
+            <li>Connaître les technologies des systèmes d'information pour in&shy;no&shy;ver dans le développement des systèmes de commerce élec&shy;tro&shy;nique et dans les pratiques de commercialisation.</li>
             <li>Intégrer les pratiques de digitalisation dans la stratégie globale de l'entreprise.</li>
             <li>Appréhender le e-commerce dans sa globalité : tableau de bord, droit, conduite du changement.</li></ul></div>
-          <div class="m"><b>Métiers</b>Analyste d'affaires · Analyste de données · Concepteur, développeur, chef de projet · Consultant en e-business · Expert en médias numériques</div>
+          <div class="m"><b>Métiers</b><ul><li>Analyste d'affaires</li><li>Analyste de données</li><li>Concepteur, développeur, chef de projet</li><li>Consultant en e-business</li><li>Expert en médias numériques</li></ul></div>
         </div>
       </div>
       <div class="ms">
         <div class="hd"><span>Mastère professionnel en Veille et Intelligence Compétitive</span><small>ESEN · ISCAE</small></div>
         <div class="bd">
-          <div><ul>
-            <li>Acquérir des savoir-faire dans le domaine de l'intelligence informationnelle.</li>
-            <li>Acquérir des savoirs permettant une lecture de la complexité des environnements multiformes auxquels sont soumis les organisations, les territoires et les régions.</li>
+          <div class="ob"><ul>
+            <li>Acquérir des savoir-faire dans le domaine de l'intelligence in&shy;for&shy;ma&shy;tion&shy;nelle.</li>
+            <li>Acquérir des savoirs permettant une lecture de la complexité des environnements multiformes auxquels sont soumis les or&shy;ga&shy;ni&shy;sa&shy;tions, les territoires et les régions.</li>
             <li>Valider les acquis par une mise en application concrète au sein des organisations publiques ou privées, des territoires et des régions.</li></ul></div>
-          <div class="m"><b>Métiers</b>Chef de projet VIC · Médiateur intermédiaire VIC · Chargé de la veille stratégique et de l'intelligence compétitive · Consultant en management de l'information · Courtier, analyste de l'information</div>
+          <div class="m"><b>Métiers</b><ul><li>Chef de projet VIC</li><li>Médiateur intermédiaire VIC</li><li>Chargé de la veille stratégique et de l'intelligence compétitive</li><li>Consultant en management de l'information</li><li>Courtier, analyste de l'information</li></ul></div>
         </div>
       </div>
       <div class="ms">
         <div class="hd"><span>Mastère de recherche en Web Intelligence</span></div>
         <div class="bd">
-          <div><ul>
-            <li>Former des spécialistes capables d'aborder des activités de recherche et d'ingénierie liées au Web Intelligence, principalement l'intelligence artificielle et les technologies d'information avancées.</li>
-            <li>Initier des projets de recherche multi-acteurs et organiser des échanges de coopération avec des universités internationales dans le domaine du WI.</li></ul></div>
-          <div class="m"><b>Débouchés</b>Intégrer des entreprises dédiées aux activités Web · Mener une carrière d'enseignant-chercheur · Cadre en recherche et développement</div>
+          <div class="ob"><ul>
+            <li>Former des spécialistes capables d'aborder des activités de re&shy;cherche et d'ingénierie liées au Web Intelligence, principalement l'intelligence artificielle et les technologies d'information avancées.</li>
+            <li>Initier des projets de recherche multi-acteurs et organiser des échan&shy;ges de coopération avec des universités internationales dans le domaine du WI.</li></ul></div>
+          <div class="m"><b>Débouchés</b><ul><li>Intégrer des entreprises dédiées aux activités Web</li><li>Mener une carrière d'enseignant-chercheur</li><li>Cadre en recherche et développement</li></ul></div>
         </div>
       </div>
       <div class="ms">
-        <div class="hd"><span>Mastère professionnel en Contrôle de Gestion et Business Intelligence</span><span class="dd">ESEN · ISCAE · URCA</span></div>
+        <div class="hd"><span>Mastère professionnel en Contrôle de Gestion et Business&nbsp;Intelligence</span><span class="dd">ESEN · ISCAE · URCA</span></div>
         <div class="bd">
-          <div><ul>
-            <li>Former des cadres capables de concilier des compétences pointues en contrôle de gestion et en pilotage des organisations et une forte opérationnalité en business intelligence et en systèmes d'information décisionnels.</li>
+          <div class="ob"><ul>
+            <li>Former des cadres capables de concilier des compétences poin&shy;tues en contrôle de gestion et en pilotage des organisations et une forte opérationnalité en business intelligence et en systèmes d'in&shy;for&shy;ma&shy;tion décisionnels.</li>
             <li>Acquérir des compétences académiques, managériales, techniques et technologiques quant aux métiers du contrôle de gestion.</li></ul></div>
-          <div class="m"><b>Métiers</b>Consultant en contrôle de gestion · Consultant en Business Intelligence · Contrôleur de gestion (central, commercial, industriel)</div>
+          <div class="m"><b>Métiers</b><ul><li>Consultant en contrôle de gestion</li><li>Consultant en Business Intelligence</li><li>Contrôleur de gestion (central, commercial, industriel)</li></ul></div>
         </div>
       </div>
     </div>
