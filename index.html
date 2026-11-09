@@ -250,13 +250,13 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lsub .n1,.lsub .n2{ width:5mm; height:5mm; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:7pt; font-weight:900; color:#fff; background:var(--navy-900) }
 .lsub .n2{ background:var(--blue) }
 .lsub .arr{ color:var(--muted-2); margin:0 1mm }
-.lrows{ display:flex; flex-direction:column; gap:1.8mm; flex:1 }
-.lr{ flex:1 1 auto; border-radius:3mm; background:var(--bg); border-left:1.4mm solid var(--c); padding:2mm 3mm 1.8mm; display:flex; flex-direction:column }
+.lrows{ display:flex; flex-direction:column; gap:2.2mm; flex:1 }
+.lr{ flex:1 1 auto; border-radius:3mm; background:var(--bg); border-left:1.4mm solid var(--c); padding:2.3mm 3mm 2.2mm; display:flex; flex-direction:column }
 .lr-h{ display:flex; align-items:baseline; gap:1.8mm; margin-bottom:1.3mm }
 .lr-h .tag{ font-size:6.6pt; font-weight:900; letter-spacing:.8px; color:var(--t); background:var(--c); border-radius:1.2mm; padding:.25mm 1.5mm; align-self:center }
 .lr-h h3{ font-size:9.4pt; font-weight:800; color:var(--navy-900) }
 .lr-h .tl{ font-size:7pt; font-weight:700; font-style:italic; color:var(--c2); margin-left:auto }
-.lr-b{ flex:1; display:flex; flex-direction:column; gap:1.3mm }
+.lr-b{ flex:1; display:grid; grid-template-columns:1fr 41mm; gap:3mm; align-items:start }
 .lr .k2{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1.1px; text-transform:uppercase; color:var(--c2); margin-bottom:.6mm }
 .lr ul{ list-style:none; font-size:6.9pt; line-height:1.32; color:var(--ink-2) }
 .lr li{ padding-left:2.4mm; position:relative }
@@ -264,11 +264,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lsub sup{ font-size:.68em; vertical-align:.45em; line-height:0; margin-left:.1mm }
 .lr-b > div:first-child li{ text-align:justify; hyphens:manual }
 .lr-b > div:first-child li + li{ margin-top:.5mm }
-.lr .jobs{ border-top:.3mm dashed rgba(11,35,66,.18); padding-top:1.4mm; display:flex; align-items:baseline; gap:2.4mm }
-.lr .jobs .k2{ flex:none; margin:0 }
-.lr .jobs ul{ display:block }
-.lr .jobs li{ display:inline; white-space:nowrap; padding:0; margin-right:2.6mm }
-.lr .jobs li::before{ position:static; display:inline-block; vertical-align:middle; margin:-.3mm 1.2mm 0 0 }
+.lr .jobs{ border-left:.3mm dashed rgba(11,35,66,.18); padding-left:2.6mm }
 .lr .jobs li::before{ background:var(--navy-900); width:1mm; height:1mm; top:1.15mm }
 </style>
 </head>
@@ -343,7 +339,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
     <div class="lrows">
       <div class="lr" style="--c:var(--cyan);--c2:var(--blue);--bg:var(--cyan-soft);--t:var(--navy-950)">
         <div class="lr-h"><span class="tag">BI</span><h3>Business Intelligence</h3><span class="tl">De la donnée à la décision</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des diplômés capables de concevoir, configurer et déployer des systèmes d'aide à la décision et des systèmes d'extraction et de gestion de connaissances.</li><li>Former des compétences ayant pour vocation d'apporter aux décideurs une aide à la décision pour avoir une vue d'ensemble de l'activité de l'entreprise.</li></ul></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des diplômés capables de concevoir, configurer et dé&shy;ployer des systèmes d'aide à la décision et des systèmes d'ex&shy;trac&shy;tion et de gestion de connaissances.</li><li>Former des compétences ayant pour vocation d'apporter aux dé&shy;ci&shy;deurs une aide à la décision pour avoir une vue d'ensemble de l'activité de l'entreprise.</li></ul></div>
           <div class="jobs"><span class="k2">Débouchés</span><ul><li>Concepteur</li><li>Développeur</li><li>Intégrateur</li><li>Data Scientist</li><li>Analyste de données</li><li>Business Intelligence Analyst</li><li>Gestionnaire de comptes clients</li></ul></div></div>
       </div>
       <div class="lr" style="--c:var(--blue);--c2:var(--navy-700);--bg:var(--surface-2);--t:#fff">
@@ -353,12 +349,12 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
       </div>
       <div class="lr" style="--c:var(--gold);--c2:var(--gold-deep);--bg:var(--gold-soft);--t:var(--navy-950)">
         <div class="lr-h"><span class="tag">eB</span><h3>E-Business</h3><span class="tl">Du business au digital</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des professionnels capables de participer à la transformation digitale des organisations, de mettre en place et de suivre la faisabilité d'un projet e-business.</li><li>Former des compétences avancées en management et en informatique, tout en développant le sens stratégique nécessaire pour saisir les occasions d'affaires qu'offrent Internet et les innovations or&shy;ga&shy;ni&shy;sa&shy;tion&shy;nelles.</li></ul></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des professionnels capables de participer à la trans&shy;for&shy;ma&shy;tion digitale des organisations, de mettre en place et de suivre la faisabilité d'un projet e-business.</li><li>Former des compétences avancées en management et en in&shy;for&shy;ma&shy;tique, tout en développant le sens stratégique nécessaire pour saisir les occasions d'affaires qu'offrent Internet et les innovations organisationnelles.</li></ul></div>
           <div class="jobs"><span class="k2">Débouchés</span><ul><li>E-Business Manager</li><li>Chef de projet digital</li><li>Digital Business Analyst</li><li>ICT Business Analyst</li><li>Développeur web</li><li>Communication digitale</li><li>Consultant transformation digitale</li></ul></div></div>
       </div>
       <div class="lr" style="--c:var(--rose);--c2:#B23A52;--bg:var(--rose-soft);--t:#fff">
         <div class="lr-h"><span class="tag">eB</span><h3>E-Business à distance</h3><span class="tl">100 % à distance · avec l'UVT</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former, en co-diplomation avec l'Université Virtuelle de Tunis, des professionnels capables de piloter la transformation digitale des organisations et de conduire des projets e-business.</li><li>Un parcours entièrement à distance, pour les professionnels en activité et les diplômés en reprise d'études.</li></ul></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former, en co-diplomation avec l'Université Virtuelle de Tunis, des professionnels capables de piloter la transformation digitale des organisations et de conduire des projets e-business.</li><li>Un parcours entièrement à distance, pour les professionnels en ac&shy;ti&shy;vi&shy;té et les diplômés en reprise d'études.</li></ul></div>
           <div class="jobs"><span class="k2">Débouchés</span><ul><li>Junior ICT Business Analyst</li><li>Web Developer</li><li>Project Coordinator IT / Digital</li><li>Digital Communication Specialist</li><li>Junior Digital Business Analyst</li><li>Assistant E-Business Manager</li><li>Junior Digital Transformation Consultant</li></ul></div></div>
       </div>
     </div>
