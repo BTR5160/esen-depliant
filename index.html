@@ -275,8 +275,9 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lr .tag{ background:linear-gradient(100deg,#5CCBF0,var(--cyan)) }
 .lr .jobs li::before{ background:var(--blue) }
 /* mastères : même système de carte que les licences, en version navy + or */
-.lr.ma{ --c:var(--navy-900); --c2:var(--navy-700); --t:#fff }
-.lr.ma .tag{ background:linear-gradient(100deg,var(--navy-900),var(--navy-700)) }
+.lr.ma{ --c:var(--blue); --c2:var(--navy-700); --t:#fff; background:linear-gradient(100deg,#EEF6FD,#F6F9FC 60%); border-left-color:transparent; border-image:none; position:relative }
+.lr.ma::before{ content:""; position:absolute; left:-1.4mm; top:-.3mm; bottom:-.3mm; width:1.4mm; border-radius:3mm 0 0 3mm; background:linear-gradient(180deg,var(--blue),var(--gold)) }
+.lr.ma .tag{ background:linear-gradient(100deg,var(--navy-700),var(--blue)) }
 .lr.ma li::before{ background:var(--blue) }
 .lr.ma .jobs .k2{ color:var(--gold-deep) }
 .lr.ma .jobs li::before{ background:var(--gold) }
