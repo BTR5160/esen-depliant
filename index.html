@@ -252,10 +252,10 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lsub .arr{ color:var(--muted-2); margin:0 1mm }
 .lrows{ display:flex; flex-direction:column; gap:2.2mm; flex:1 }
 .lr{ flex:1 1 auto; border-radius:3mm; background:var(--bg); border-left:1.4mm solid var(--c); padding:2.3mm 3mm 2.2mm; display:flex; flex-direction:column }
-.lr-h{ display:flex; align-items:baseline; gap:1.8mm; margin-bottom:1.3mm }
+.lr-h{ display:grid; grid-template-columns:auto 1fr 41mm; column-gap:1.8mm; align-items:baseline; margin-bottom:1.3mm }
 .lr-h .tag{ font-size:6.6pt; font-weight:900; letter-spacing:.8px; color:var(--t); background:var(--c); border-radius:1.2mm; padding:.25mm 1.5mm; align-self:center }
 .lr-h h3{ font-size:9.4pt; font-weight:800; color:var(--navy-900) }
-.lr-h .tl{ font-size:7pt; font-weight:700; font-style:italic; color:var(--c2); margin-left:auto }
+.lr-h .tl{ font-size:7pt; font-weight:700; font-style:italic; color:var(--c2); padding-left:2.85mm; white-space:nowrap }
 .lr-b{ flex:1; display:grid; grid-template-columns:1fr 41mm; gap:3mm; align-items:start }
 .lr .k2{ display:block; font-size:6.5pt; font-weight:800; letter-spacing:1.1px; text-transform:uppercase; color:var(--c2); margin-bottom:.6mm }
 .lr ul{ list-style:none; font-size:6.9pt; line-height:1.32; color:var(--ink-2) }
