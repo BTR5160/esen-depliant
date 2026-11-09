@@ -119,11 +119,13 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .mc.sum .orb{ width:20mm; height:20mm; right:-6mm; bottom:-6mm; opacity:.55 }
 
 /* ═════ 5 · CLUBS & PARTENAIRES ═════ */
-.clubs{ display:grid; grid-template-columns:repeat(3,1fr); gap:3.6mm 3mm; margin-bottom:6.5mm }
+.clubs{ display:grid; grid-template-columns:repeat(4,1fr); gap:3.6mm 2mm; margin-bottom:6.5mm }
 .club{ display:flex; flex-direction:column; align-items:center; text-align:center }
-.club .ring{ width:27mm; height:27mm; border-radius:50%; padding:1mm; background:conic-gradient(from 200deg,var(--cyan),var(--navy-800),var(--gold),var(--cyan)) }
+.club .ring{ width:24mm; height:24mm; border-radius:50%; padding:1mm; background:conic-gradient(from 200deg,var(--cyan),var(--navy-800),var(--gold),var(--cyan)) }
 .club .disc{ display:flex; align-items:center; justify-content:center; width:100%; height:100%; border-radius:50%; background:#fff }
 .club img{ width:72%; height:72%; object-fit:contain; display:block; mix-blend-mode:multiply }
+.club.dark .disc{ background:#000; overflow:hidden }
+.club.dark img{ width:72%; height:72%; mix-blend-mode:normal }
 .club h4{ font-size:8pt; font-weight:800; color:var(--navy-900); margin-top:2mm }
 .club p{ font-size:7pt; color:var(--muted); margin-top:.3mm }
 .logos{ display:grid; grid-template-columns:repeat(5,1fr); gap:2mm; flex:1; grid-auto-rows:1fr }
@@ -442,10 +444,12 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
       <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_amb.png" alt=""></span></span><h4>ESEN Ambassadors</h4><p>Orientation &amp; campus</p></div>
       <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_joker.png" alt=""></span></span><h4>Joker ESEN</h4><p>Culture &amp; solidarité</p></div>
       <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_enactus.png" alt=""></span></span><h4>Enactus ESEN</h4><p>Entrepreneuriat social</p></div>
-      <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_hive.png" alt=""></span></span><h4>ESEN Hive Club</h4><p>Programmation</p></div>
       <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_green.png" alt=""></span></span><h4>Green UMA ESEN</h4><p>Développement durable</p></div>
-      <div class="club"><span class="ring"><span class="disc"><img src="assets/clubs/logo_chess.png" alt=""></span></span><h4>ESEN Chess Club</h4><p>Stratégie</p></div>
-    </div>
+      <div class="club dark"><span class="ring"><span class="disc"><img src="assets/clubs/dark_hive.png" alt=""></span></span><h4>ESEN Hive Club</h4><p>Programmation</p></div>
+      <div class="club dark"><span class="ring"><span class="disc"><img src="assets/clubs/dark_chess.png" alt=""></span></span><h4>ESEN Chess Club</h4><p>Stratégie</p></div>
+      <div class="club dark"><span class="ring"><span class="disc"><img src="assets/clubs/dark_apollo.png" alt=""></span></span><h4>Apollo</h4><p>Arts &amp; musique</p></div>
+      <div class="club dark"><span class="ring"><span class="disc"><img src="assets/clubs/dark_microsoft.png" alt=""></span></span><h4>ESEN Microsoft Club</h4><p>Technologies Microsoft</p></div>
+        </div>
 
     <div class="sh" style="margin-bottom:3.4mm"><div class="kick"><i class="orb"></i>Ils nous font confiance</div>
       <h1>Nos <em>partenaires</em></h1></div>
