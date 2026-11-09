@@ -261,6 +261,9 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lr ul{ list-style:none; font-size:6.9pt; line-height:1.32; color:var(--ink-2) }
 .lr li{ padding-left:2.4mm; position:relative }
 .lr li::before{ content:""; position:absolute; left:0; top:1.05mm; width:1.2mm; height:1.2mm; border-radius:50%; background:var(--c) }
+.lsub sup{ font-size:.68em; vertical-align:.45em; line-height:0; margin-left:.1mm }
+.lr-b > div:first-child li{ text-align:justify; hyphens:none }
+.lr-b > div:first-child li + li{ margin-top:.7mm }
 .lr .jobs{ border-left:.3mm dashed rgba(11,35,66,.18); padding-left:2.6mm }
 .lr .jobs li::before{ background:var(--navy-900); width:1mm; height:1mm; top:1.15mm }
 </style>
@@ -332,7 +335,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
   <div class="frame">
     <div class="sh" style="margin-bottom:2mm"><div class="kick"><i class="orb"></i>Licence · Bac + 3</div>
       <h1 style="font-size:15pt">Licence en <em>Business Computing</em></h1></div>
-    <div class="lsub"><span class="n1">1</span>Tronc commun en 1re année<span class="arr">→</span><span class="n2">4</span>parcours au choix en 2e et 3e années</div>
+    <div class="lsub"><span class="n1">1</span><span>Tronc commun en 1<sup>ère</sup> année</span><span class="arr">→</span><span class="n2">4</span><span>parcours au choix en 2<sup>ème</sup> et 3<sup>ème</sup> années</span></div>
     <div class="lrows">
       <div class="lr" style="--c:var(--cyan);--c2:var(--blue);--bg:var(--cyan-soft);--t:var(--navy-950)">
         <div class="lr-h"><span class="tag">BI</span><h3>Business Intelligence</h3><span class="tl">De la donnée à la décision</span></div>
