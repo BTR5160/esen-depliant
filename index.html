@@ -273,6 +273,9 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lr .jobs li::before{ background:var(--navy-900); width:1mm; height:1mm; top:1.15mm }
 
 /* mastères : même système de carte que les licences, en version navy + or */
+.lintro{ font-size:7.4pt; line-height:1.42; color:var(--ink-2); text-align:justify; hyphens:manual; margin:-1mm 0 3mm; padding-left:2.6mm; border-left:.6mm solid var(--blue) }
+.lintro b{ color:var(--navy-900); font-weight:800 }
+.lr .ob{ font-size:7.3pt; line-height:1.45; color:var(--ink-2); text-align:justify; hyphens:manual }
 .lr.ma li::before{ background:var(--c) }
 .lr.ma .jobs .k2{ color:var(--c2) }
 .lr.ma .jobs li::before{ background:var(--navy-900) }
@@ -283,8 +286,8 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lr.ma .lr-h .tag{ align-self:start; margin-top:.2mm }
 .lr.ma .lr-h h3{ line-height:1.2 }
 .lr.ma .lr-b{ grid-template-columns:1fr 44mm }
-.lr.ma .lr-h h3{ font-size:8pt; letter-spacing:-.1px }
-.lr.ma ul{ font-size:6.6pt; line-height:1.26 }
+.lr.ma .lr-h h3{ font-size:7.8pt; letter-spacing:-.15px }
+.lr.ma ul{ font-size:6.45pt; line-height:1.24 }
 .lr.ma .lr-b > div:first-child li + li{ margin-top:.3mm }
 </style>
 </head>
@@ -355,27 +358,23 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
   <div class="frame">
     <div class="sh" style="margin-bottom:2mm"><div class="kick"><i class="orb"></i>Licence · Bac + 3</div>
       <h1 style="font-size:15pt">Licence en <em>Business Computing</em></h1></div>
-    <div class="lsub"><span class="n1">1</span><span>Tronc commun en 1<sup>ère</sup> année</span><span class="arr">→</span><span class="n2">4</span><span>parcours au choix en 2<sup>ème</sup> et 3<sup>ème</sup> années</span></div>
+    <div class="lsub"><span class="n1">1</span><span>Tronc commun en 1<sup>ère</sup> année</span><span class="arr">→</span><span class="n2">3</span><span>parcours au choix en 2<sup>ème</sup> et 3<sup>ème</sup> années</span></div>
+    <p class="lintro">La Licence <b>Business Computing (BC)</b> forme des diplômés à double compétence en informatique et gestion, capables de concevoir et d'exploiter des solutions numériques adaptées aux besoins des or&shy;ga&shy;ni&shy;sa&shy;tions. Elle prépare aux métiers de la transformation digitale à travers trois parcours spécialisés : Business Intelligence (BI), Business Information Systems (BIS) et E-Business (E-BUS).</p>
     <div class="lrows">
-      <div class="lr" style="--c:var(--cyan);--c2:var(--blue);--bg:var(--cyan-soft);--t:var(--navy-950)">
+      <div class="lr" style="--c:var(--cyan);--c2:var(--blue);--t:var(--navy-950)">
         <div class="lr-h"><span class="tag">BI</span><h3>Business Intelligence</h3><span class="tl">De la donnée à la décision</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des diplômés capables de concevoir, configurer et dé&shy;ployer des systèmes d'aide à la décision et des systèmes d'ex&shy;trac&shy;tion et de gestion de connaissances.</li><li>Former des compétences ayant pour vocation d'apporter aux dé&shy;ci&shy;deurs une aide à la décision pour avoir une vue d'ensemble de l'activité de l'entreprise.</li></ul></div>
-          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Concepteur</li><li>Développeur</li><li>Intégrateur</li><li>Data Scientist</li><li>Analyste de données</li><li>Business Intelligence Analyst</li><li>Gestionnaire de comptes clients</li></ul></div></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><p class="ob">Le parcours BI forme des spécialistes capables d'exploiter et de valoriser les données, de concevoir des systèmes décisionnels et d'utiliser l'intelligence artificielle et le machine learning pour sou&shy;te&shy;nir la prise de décision et optimiser la performance des organisations.</p></div>
+          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Data Analyst</li><li>Data Engineer</li><li>Business Intelligence Specialist / BI Developer</li><li>ICT Business Analyst</li><li>Junior Data Scientist</li><li>Junior Machine Learning Specialist</li><li>Web Developer</li></ul></div></div>
       </div>
-      <div class="lr" style="--c:var(--blue);--c2:var(--navy-700);--bg:var(--surface-2);--t:#fff">
+      <div class="lr" style="--c:var(--blue);--c2:var(--navy-700);--t:#fff">
         <div class="lr-h"><span class="tag">BIS</span><h3>Business Information Systems</h3><span class="tl">Concevoir et gouverner les SI</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des diplômés pouvant être immédiatement opérationnels dans le domaine des technologies des systèmes d'information des entreprises.</li><li>Former des compétences élémentaires en termes de gouvernance et de management des SI.</li></ul></div>
-          <div class="jobs"><span class="k2">Débouchés</span><ul><li>ICT Business Analyst</li><li>Consultant ERP</li><li>Chef de projet IT</li><li>Développeur web</li><li>Développeur Cloud</li><li>Gouvernance des données</li><li>Consultant transformation digitale</li></ul></div></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><p class="ob">Le parcours BIS forme des spécialistes capables de concevoir, développer et intégrer des systèmes d'information intelligents, en mobilisant le développement logiciel, l'intelligence artificielle, le Big Data, le cloud computing et la cy&shy;ber&shy;sé&shy;cu&shy;ri&shy;té pour répondre aux besoins métiers des organisations.</p></div>
+          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Software Developer / Application Developer</li><li>Web Developer</li><li>Junior Cloud Developer</li><li>ERP Consultant</li><li>ICT Business Analyst</li><li>Assistant Data Governance</li><li>Assistant ICT Project Manager</li><li>IT Project Coordinator</li><li>Assistant Digital Transformation Consultant</li></ul></div></div>
       </div>
-      <div class="lr" style="--c:var(--gold);--c2:var(--gold-deep);--bg:var(--gold-soft);--t:var(--navy-950)">
-        <div class="lr-h"><span class="tag">eB</span><h3>E-Business</h3><span class="tl">Du business au digital</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former des professionnels capables de participer à la trans&shy;for&shy;ma&shy;tion digitale des organisations, de mettre en place et de suivre la faisabilité d'un projet e-business.</li><li>Former des compétences avancées en management et en in&shy;for&shy;ma&shy;tique, tout en développant le sens stratégique nécessaire pour saisir les occasions d'affaires qu'offrent Internet et les innovations organisationnelles.</li></ul></div>
-          <div class="jobs"><span class="k2">Débouchés</span><ul><li>E-Business Manager</li><li>Chef de projet digital</li><li>Digital Business Analyst</li><li>ICT Business Analyst</li><li>Développeur web</li><li>Communication digitale</li><li>Consultant transformation digitale</li></ul></div></div>
-      </div>
-      <div class="lr" style="--c:var(--rose);--c2:#B23A52;--bg:var(--rose-soft);--t:#fff">
-        <div class="lr-h"><span class="tag">eB</span><h3>E-Business à distance</h3><span class="tl">100 % à distance · avec l'UVT</span></div>
-        <div class="lr-b"><div><span class="k2">Objectifs</span><ul><li>Former, en co-diplomation avec l'Université Virtuelle de Tunis, des professionnels capables de piloter la transformation digitale des organisations et de conduire des projets e-business.</li><li>Un parcours entièrement à distance, pour les professionnels en ac&shy;ti&shy;vi&shy;té et les diplômés en reprise d'études.</li></ul></div>
-          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Junior ICT Business Analyst</li><li>Web Developer</li><li>Project Coordinator IT / Digital</li><li>Digital Communication Specialist</li><li>Junior Digital Business Analyst</li><li>Assistant E-Business Manager</li><li>Junior Digital Transformation Consultant</li></ul></div></div>
+      <div class="lr" style="--c:var(--gold);--c2:var(--gold-deep);--t:var(--navy-950)">
+        <div class="lr-h"><span class="tag">E-BUS</span><h3>E-Business</h3><span class="tl">Du business au digital</span></div>
+        <div class="lr-b"><div><span class="k2">Objectifs</span><p class="ob">Le parcours E-BUS forme des spécialistes capables de concevoir et gérer des activités et plateformes de commerce numérique, en exploitant l'intelligence artificielle et les technologies digitales pour le marketing, l'expérience client, le paiement électronique et l'analyse des comportements des consommateurs.</p></div>
+          <div class="jobs"><span class="k2">Débouchés</span><ul><li>E-Business Manager</li><li>Digital Business Analyst</li><li>Digital Transformation Consultant</li><li>Digital Communication Specialist</li><li>IT/Digital Project Coordinator</li><li>E-Commerce Specialist</li><li>Digital Marketing Specialist</li><li>Web Developer</li></ul></div></div>
       </div>
     </div>
   </div>
@@ -392,42 +391,42 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
       <div class="lr ma" style="--c:#0F9D8F;--c2:#0B7469;--t:#fff">
         <div class="lr-h"><span class="tag">DSSD</span><h3>Data Science and Software Development</h3><span class="tl">Mastère professionnel</span></div>
         <div class="lr-b"><div><ul>
-            <li>Former des spécialistes capables d'utiliser des outils statistiques et informatiques pour accompagner et faciliter la prise de décisions à travers l'analyse de données.</li>
-            <li>Former des spécialistes capables de configurer, gérer et faire é&shy;vo&shy;luer les bases de données.</li>
+            <li>Former des spécialistes capables d'utiliser des outils statistiques et des outils informatiques pour accompagner et faciliter la prise de décisions à travers les analyses de données.</li>
+            <li>Former des spécialistes capables de configurer, gérer et faire é&shy;vo&shy;luer la base de données.</li>
             <li>Former des spécialistes capables d'assurer le développement, l'amé&shy;lio&shy;ra&shy;tion et la mise en œuvre des applications informatiques.</li></ul></div>
           <div class="jobs"><span class="k2">Métiers</span><ul><li>Administrateur de bases de données</li><li>Développeur d'applications web et mobiles</li><li>Data scientist, analyste de données, analyste business intelligence</li></ul></div></div>
       </div>
       <div class="lr ma" style="--c:#6A4FC8;--c2:#4E37A0;--t:#fff">
         <div class="lr-h"><span class="tag">eB</span><h3>E-Business</h3><span class="tl">Mastère professionnel<small>Présentiel et à distance avec le CNFCPP</small></span></div>
         <div class="lr-b"><div><ul>
-            <li>Comprendre les enjeux liés au e-business.</li>
+            <li>Comprendre les enjeux liés au E-Business.</li>
             <li>Acquérir un savoir-faire dans le développement informatique d'un projet de e-commerce.</li>
-            <li>Connaître les technologies des systèmes d'information pour in&shy;no&shy;ver dans le développement des systèmes de commerce élec&shy;tro&shy;nique et dans les pratiques de commercialisation.</li>
+            <li>Connaître les technologies des systèmes d'information pour in&shy;no&shy;ver dans le développement des systèmes de commerce élec&shy;tro&shy;nique et aussi dans les pratiques de commercialisation.</li>
             <li>Intégrer les pratiques de digitalisation dans la stratégie globale de l'entreprise.</li>
-            <li>Appréhender le e-commerce dans sa globalité : tableau de bord, droit, conduite du changement.</li></ul></div>
-          <div class="jobs"><span class="k2">Métiers</span><ul><li>Analyste d'affaires</li><li>Analyste de données</li><li>Concepteur, développeur, chef de projet</li><li>Consultant en e-business</li><li>Expert en médias numériques</li></ul></div></div>
+            <li>Appréhender le e-commerce dans sa globalité : gestion d'un tableau de bord, droit, conduite du changement.</li></ul></div>
+          <div class="jobs"><span class="k2">Métiers</span><ul><li>Analyste d'affaires</li><li>Analyste de données</li><li>Concepteur, développeur, chef de projet</li><li>Consultant en E-Business</li><li>Expert en médias numériques</li></ul></div></div>
       </div>
       <div class="lr ma" style="--c:#E07A1F;--c2:#B35A0C;--t:#fff">
         <div class="lr-h"><span class="tag">VIC</span><h3>Veille et Intelligence Compétitive</h3><span class="tl">Mastère professionnel · <small style="display:inline">ESEN · ISCAE</small></span></div>
         <div class="lr-b"><div><ul>
             <li>Acquérir des savoir-faire dans le domaine de l'intelligence in&shy;for&shy;ma&shy;tion&shy;nelle.</li>
-            <li>Acquérir des savoirs permettant une lecture de la complexité des environnements multiformes auxquels sont soumis les or&shy;ga&shy;ni&shy;sa&shy;tions, les territoires et les régions.</li>
-            <li>Valider les acquis par une mise en application concrète au sein des organisations publiques ou privées, des territoires et des régions.</li></ul></div>
-          <div class="jobs"><span class="k2">Métiers</span><ul><li>Chef de projet VIC</li><li>Médiateur intermédiaire VIC</li><li>Chargé de la veille stratégique et de l'intelligence compétitive</li><li>Consultant en management de l'information</li><li>Courtier, analyste de l'information</li></ul></div></div>
+            <li>Acquérir des savoirs permettant une lecture de la complexité des environnements multiformes auxquels sont soumises les or&shy;ga&shy;ni&shy;sa&shy;tions, les territoires et les régions d'une façon générale.</li>
+            <li>Valider les acquis des étudiants par une mise en application concrète des connaissances acquises au sein des organisations publiques ou privées aussi bien que les territoires et les régions.</li></ul></div>
+          <div class="jobs"><span class="k2">Métiers</span><ul><li>Chef de projet VIC</li><li>Médiateur intermédiaire VIC</li><li>Chargé de la veille stratégique et de l'intelligence compétitive</li><li>Consultant en management de l'information</li><li>Courtier en information</li><li>Analyste de l'information</li></ul></div></div>
       </div>
       <div class="lr ma" style="--c:#2F5FC4;--c2:#1F4496;--t:#fff">
         <div class="lr-h"><span class="tag">WI</span><h3>Web Intelligence</h3><span class="tl">Mastère de recherche</span></div>
         <div class="lr-b"><div><ul>
-            <li>Former des spécialistes capables d'aborder des activités de re&shy;cherche et d'ingénierie liées au Web Intelligence, principalement l'intelligence artificielle et les technologies d'information avancées.</li>
-            <li>Initier des projets de recherche multi-acteurs et organiser des échan&shy;ges de coopération avec des universités internationales dans le domaine du WI.</li></ul></div>
-          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Intégrer des entreprises dédiées aux activités Web</li><li>Mener une carrière d'enseignant-chercheur</li><li>Cadre en recherche et développement</li></ul></div></div>
+            <li>Former des spécialistes capables d'aborder des activités de re&shy;cherche et d'ingénierie reliées aux domaines inhérents au Web Intelligence, soit principalement l'intelligence artificielle et les technologies d'information avancées.</li>
+            <li>Initier des projets de recherche multi-acteurs et d'organiser des échan&shy;ges de coopération avec des universités internationales dans le domaine de recherche du WI.</li></ul></div>
+          <div class="jobs"><span class="k2">Débouchés</span><ul><li>Intégrer des entreprises dédiées aux activités Web</li><li>Mener une carrière d'enseignant-chercheur</li><li>Obtenir des postes de cadres en recherche et développement dans le domaine du Web Intelligence</li></ul></div></div>
       </div>
       <div class="lr ma" style="--c:#2E8B57;--c2:#1F6A40;--t:#fff">
         <div class="lr-h"><span class="tag">CGBI</span><h3>Contrôle de Gestion et Business Intelligence</h3><span class="tl">Mastère professionnel<small>ESEN · ISCAE · URCA</small></span></div>
         <div class="lr-b"><div><ul>
-            <li>Former des cadres capables de concilier des compétences poin&shy;tues en contrôle de gestion et en pilotage des organisations et une forte opérationnalité en business intelligence et en systèmes d'in&shy;for&shy;ma&shy;tion décisionnels.</li>
+            <li>Former des cadres capables de concilier des compétences poin&shy;tues en contrôle de gestion et en pilotage des organisations et une forte opérationnalité en business intelligence et en systèmes d'in&shy;for&shy;ma&shy;tion, notamment décisionnels.</li>
             <li>Acquérir des compétences académiques, managériales, tech&shy;niques et technologiques quant aux métiers du contrôle de gestion.</li></ul></div>
-          <div class="jobs"><span class="k2">Métiers</span><ul><li>Consultant en contrôle de gestion</li><li>Consultant en Business Intelligence</li><li>Contrôleur de gestion (central, commercial, industriel)</li></ul></div></div>
+          <div class="jobs"><span class="k2">Métiers</span><ul><li>Consultant en contrôle de gestion</li><li>Consultant en Business Intelligence</li><li>Contrôleur de gestion, contrôleur de gestion centrale, commerciale, industrielle</li></ul></div></div>
       </div>
     </div>
   </div>
