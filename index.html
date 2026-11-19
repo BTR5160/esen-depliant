@@ -279,14 +279,19 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .lr.ma .jobs li::before{ background:var(--navy-900) }
 .lr-h .tl small{ display:block; font-style:normal; font-weight:800; font-size:6pt; color:var(--c2); margin-top:.2mm }
 .lr.ma{ padding:1.6mm 3mm 1.5mm }
-.mrows{ gap:1.6mm }
+.mrows{ gap:1.2mm }
 .lr.ma .lr-h{ grid-template-columns:auto 1fr 44mm; margin-bottom:1mm; align-items:start }
 .lr.ma .lr-h .tag{ align-self:start; margin-top:.2mm }
 .lr.ma .lr-h h3{ line-height:1.2 }
 .lr.ma .lr-b{ grid-template-columns:1fr 44mm }
 .lr.ma .lr-h h3{ font-size:7.8pt; letter-spacing:-.15px }
-.lr.ma ul{ font-size:6.45pt; line-height:1.24 }
+.lr.ma ul{ font-size:6.25pt; line-height:1.2 }
 .lr.ma .lr-b > div:first-child li + li{ margin-top:.3mm }
+.lr.lr-mini{ flex:0 0 auto }
+.lr.ma .lr-h{ margin-bottom:calc(1mm - var(--tlx,0mm)) }
+.lr.ma .jobs{ margin-top:var(--tlx,0mm) }
+.lr.lr-mini .lr-h{ margin-bottom:0 }
+.lr.lr-mini .ob{ font-size:6.25pt; line-height:1.2; margin-top:.6mm; text-align:left }
 </style>
 </head>
 <body>
@@ -394,7 +399,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
             <li>Former des spécialistes capables d'assurer le développement, l'amé&shy;lio&shy;ra&shy;tion et la mise en œuvre des applications informatiques.</li></ul></div>
           <div class="jobs"><span class="k2">Métiers</span><ul><li>Administrateur de bases de données</li><li>Développeur d'applications web et mobiles</li><li>Data scientist, analyste de données, analyste business intelligence</li></ul></div></div>
       </div>
-      <div class="lr ma" style="--c:#6A4FC8;--c2:#4E37A0;--t:#fff">
+      <div class="lr ma" style="--c:#6A4FC8;--c2:#4E37A0;--t:#fff;--tlx:5.2mm">
         <div class="lr-h"><span class="tag">E-BUS</span><h3>E-Business</h3><span class="tl">Mastère professionnel<small>Formation initiale et continue<br>avec le CNFCPP</small></span></div>
         <div class="lr-b"><div><ul>
             <li>Comprendre les enjeux liés au E-Business.</li>
@@ -403,6 +408,9 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
             <li>Intégrer les pratiques de digitalisation dans la stratégie globale de l'entreprise.</li>
             <li>Appréhender le e-commerce dans sa globalité : gestion d'un tableau de bord, droit, conduite du changement.</li></ul></div>
           <div class="jobs"><span class="k2">Métiers</span><ul><li>Analyste d'affaires</li><li>Analyste de données</li><li>Concepteur, développeur, chef de projet</li><li>Consultant en E-Business</li><li>Expert en médias numériques</li></ul></div></div>
+      </div>
+      <div class="lr ma lr-mini" style="--c:#9B6FE0;--c2:#6A45B8;--t:#fff">
+        <div class="lr-h"><span class="tag">E-BUS</span><div><h3>E-Business</h3><p class="ob">Mêmes objectifs et mêmes métiers que le mastère E&#8209;Business ci-dessus, en partenariat avec l'Université Virtuelle de Tunis (UVT).</p></div><span class="tl">Mastère professionnel<small>Formation initiale et continue<br>avec l'UVT</small></span></div>
       </div>
       <div class="lr ma" style="--c:#E07A1F;--c2:#B35A0C;--t:#fff">
         <div class="lr-h"><span class="tag">VIC</span><h3>Veille et Intelligence Compétitive</h3><span class="tl">Mastère professionnel · <small style="display:inline">ESEN · ISCAE</small></span></div>
@@ -419,7 +427,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
             <li>Initier des projets de recherche multi-acteurs et d'organiser des échan&shy;ges de coopération avec des universités internationales dans le domaine de recherche du WI.</li></ul></div>
           <div class="jobs"><span class="k2">Débouchés</span><ul><li>Intégrer des entreprises dédiées aux activités Web</li><li>Mener une carrière d'enseignant-chercheur</li><li>Obtenir des postes de cadres en recherche et développement dans le domaine du Web Intelligence</li></ul></div></div>
       </div>
-      <div class="lr ma" style="--c:#2E8B57;--c2:#1F6A40;--t:#fff">
+      <div class="lr ma" style="--c:#2E8B57;--c2:#1F6A40;--t:#fff;--tlx:2.6mm">
         <div class="lr-h"><span class="tag">CGBI</span><h3>Contrôle de Gestion et Business Intelligence</h3><span class="tl">Mastère professionnel<small>ESEN · ISCAE · URCA</small></span></div>
         <div class="lr-b"><div><ul>
             <li>Former des cadres capables de concilier des compétences poin&shy;tues en contrôle de gestion et en pilotage des organisations et une forte opérationnalité en business intelligence et en systèmes d'in&shy;for&shy;ma&shy;tion, notamment décisionnels.</li>
