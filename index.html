@@ -26,7 +26,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 @media screen{ .page{ margin:0 auto 6mm; box-shadow:0 3mm 12mm rgba(0,0,0,.35); } }
 
 .orb{ position:absolute; border-radius:50%; pointer-events:none;
-  background:radial-gradient(circle at 30% 24%,#EAFBFF 0%,#8FDCF6 22%,var(--cyan) 48%,#1676B1 74%,#0B325B 100%);
+  background:url(assets/orb.png) center/100% 100% no-repeat;
 }
 .dotgrid{ position:absolute; pointer-events:none }
 
@@ -79,11 +79,11 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 .bubbles{ position:relative; height:92mm; }
 .bubbles svg.links{ position:absolute; inset:0; width:100%; height:100% }
 .bub{ position:absolute; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#fff;
-  background:radial-gradient(circle at 32% 26%,#A6E8FB 0%,#40C1EC 24%,#1A92D2 52%,#0F5797 82%,#0B2E57 100%);
+  background:url(assets/bub_blue.png) center/100% 100% no-repeat;
   transform:translate(-50%,-50%) }
 .bub b{ font-weight:900; line-height:1; letter-spacing:-.3px }
 .bub span{ font-size:6.5pt; font-weight:800; letter-spacing:.8px; text-transform:uppercase; margin-top:.8mm; line-height:1.15 }
-.bub.gold{ background:radial-gradient(circle at 32% 26%,#FFF3C4 0%,#FFD565 26%,#F4AE16 58%,#C47E00 88%,#8F5A00 100%); color:var(--navy-950) }
+.bub.gold{ background:url(assets/bub_gold.png) center/100% 100% no-repeat; color:var(--navy-950) }
 
 /* ═════ 3 · LICENCES ═════ */
 .steps{ display:grid; grid-template-columns:1fr 1fr 1fr; position:relative; margin:0 0 5mm }
@@ -119,7 +119,7 @@ body{ font-family:var(--sans); color:var(--ink); font-feature-settings:"kern" 1,
 /* ═════ 5 · CLUBS & PARTENAIRES ═════ */
 .clubs{ display:grid; grid-template-columns:repeat(4,1fr); gap:3.6mm 2mm; margin-bottom:6.5mm }
 .club{ display:flex; flex-direction:column; align-items:center; text-align:center }
-.club .ring{ width:24mm; height:24mm; border-radius:50%; padding:1mm; background:linear-gradient(135deg,var(--cyan) 0%,var(--navy-800) 55%,var(--gold) 100%) }
+.club .ring{ width:24mm; height:24mm; border-radius:50%; padding:1mm; background:var(--blue) }
 .club .disc{ display:flex; align-items:center; justify-content:center; width:100%; height:100%; border-radius:50%; background:#fff }
 .club img{ width:72%; height:72%; object-fit:contain; display:block; mix-blend-mode:multiply }
 .club.dark .disc{ background:#000; overflow:hidden }
